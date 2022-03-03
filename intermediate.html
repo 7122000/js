@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading"> Welcome to Code With akash</h1>
+        <div id="myfirst" class="good" id="first">child 1
+
+            <ul class="this">
+                <li class="childul">this</li>
+                <li class="childul">is</li>
+                <li class="childul">a</li>
+                <li class="childul">list </li>
+                <li class="childul">of my dreams</li>
+            </ul>
+        </div>
+        <div class="child">child 2</div>
+        <div class="child red">child 3</div>
+        <div class="child">child 4</div>
+        <form action="none.html" method="post">
+            <a href="//facebook.com">Go to Code With Akash</a>
+            <br>
+            <br> Search this website: <input type="text" name="Hello" id="">
+            <input type="button" value="submit">
+        </form>
+    </div>
+    <br>
+    <div class="no">this is a dummy div1</div>
+    <div class="no">this is a dummy div2</div>
+    <div class="no">this is a dummy div3</div>
+
+    <script>
+        /*window object*/
+        let a = window;
+        a = window.innerHeight;
+        a = window.innerWidth;
+        a = window.outerHeight;
+        a = window.outerWidth;
+        a = scrollX;
+        a = scrollY;
+        //a = location.reload();
+        a = location.toString()
+        console.log(a)
+
+        console.clear();
+    </script>
+
+    <script>
+        /*DOM*/
+        let b = document;
+        b = document.all;
+        b = document.body;
+        b = document.forms[0];
+        b = document.links[0];
+        console.log(b);
+    </script>
+
+    <script>
+        /*single selector*/
+        let element = document.getElementById('myfirst');
+        element.innerHTML = "<b>hello this is akash</b>";
+        element.style.color = "red";
+        element.innerText = "this is new year";
+        // element = element.className
+        // element = element.parentNode;
+        // element = element.childNodes;
+        console.log(element);
+
+        let sel = document.querySelector('.container');
+        sel = document.querySelector("#myfirst");
+        sel = document.querySelector('div');
+        sel.innerHTML = "<b>hy this is akash</b>";
+        sel.innerText = "namaste";
+        sel.style.color = "blue";
+        console.log(sel);
+
+        /*multiple selector*/
+        let elem = document.getElementsByClassName('child');
+        elem = document.getElementsByTagName('div');
+        elem = document.getElementsByClassName('container');
+
+        Array.from(elem).forEach(element => {
+            console.log(element);
+            element.style.color = 'green';
+
+        });
+
+        console.clear();
+    </script>
+</body>
+
+</html>

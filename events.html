@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading"> Welcome to Code With akash</h1>
+        <div id="myfirst" class="good" id="first">child 1
+
+            <ul class="this">
+                <li class="childul">this</li>
+                <li class="childul">is</li>
+                <li class="childul">a</li>
+                <li class="childul">list </li>
+                <li class="childul">of my dreams</li>
+            </ul>
+        </div>
+        <div class="child">child 2</div>
+        <div class="child red">child 3</div>
+        <div class="child">child 4</div>
+        <form action="none.html" method="post">
+            <a href="//facebook.com">Go to Code With Akash</a>
+            <br>
+            <br> Search this website: <input type="text" name="Hello" id="">
+            <input type="button" value="submit" id="btn">
+        </form>
+    </div>
+    <br>
+    <div class="no">this is a dummy div1</div>
+    <div class="no">this is a dummy div2</div>
+    <div class="no">this is a dummy div3</div>
+
+    <script>
+        /*click*/
+        let ele = document.getElementById('heading');
+        ele.addEventListener("click", fun1());
+
+        function fun1() {
+            console.log("you enter the heading");
+        }
+
+        /*dbclick*/
+        ele = document.getElementById('heading');
+        ele.addEventListener("dblclick", fun2);
+
+        function fun2() {
+            console.log("you double click on heading");
+        }
+
+        /*mouseover*/
+        ele = document.getElementById("heading");
+        ele.addEventListener("mouseover", fun3);
+
+        function fun3() {
+            console.log("on the head");
+        }
+
+        /*mouseout*/
+        ele = document.getElementById('heading');
+        ele.addEventListener("mouseout", fun4);
+
+        function fun4() {
+            console.log("off the para");
+        }
+
+        /*mouseenter*/
+        ele = document.getElementById('btn');
+        ele.addEventListener("mouseenter", fun5);
+
+        function fun5() {
+            console.log("you enter the mouse")
+        }
+
+        /*mouseleave*/
+        ele = document.getElementById('btn');
+        ele.addEventListener("mouseleave", fun6)
+
+        function fun6() {
+            console.log("you exit the mouse");
+
+        }
+
+        /*mousemove*/
+        ele = document.querySelector('.container');
+        ele.addEventListener("mousemove", fun7);
+
+        function fun7(e) {
+            console.log(e.offsetX, e.offsetY);
+            document.body.style.color = `rgb(${e.offsetX},${e.offsetX},154)`;
+            console.log("your mouse move ");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        console.time("time is");
+        console.log("welcometo js");
+        console.log(6 + 5);
+        console.log([4, 4, 3, 3]);
+        console.log({
+            name: "akash",
+            roll: "21"
+        });
+        console.table({
+            name: "akash",
+            roll: "21"
+        });
+        console.warn("warning hai");
+        console.error("tisis error");
+        alert("click me");
+        console.timeEnd("time is");
+        console.clear();
+    </script>
+
+    <script>
+        var name = 'akash';
+        var roll = 21;
+        console.log(name, roll);
+
+        let name2 = 'akash';
+        let roll2 = 21;
+        console.log(name2, roll2);
+
+        const name3 = 'akash'; //permanent value
+        console.log(name3);
+
+        console.clear();
+    </script>
+
+    <script>
+        /*data type*/
+        //primitive
+        let name = 'akash';
+        console.log('data is', (typeof name));
+
+        let marks = 34;
+        console.log('data is', (typeof marks));
+
+        let bool = true;
+        console.log('data is', (typeof bool));
+
+        let nullval = null;
+        console.log('data is', (typeof nullval));
+
+        let undef = undefined;
+        console.log('data is', (typeof undef));
+
+        //reference
+        //1-object 2-array 3-function
+        console.clear();
+    </script>
+
+    <script>
+        /*string :methods*/
+        var str = "  this is js  ";
+        console.log(str);
+
+        var fpos = str.indexOf('is');
+        var lpos = str.lastIndexOf('is');
+        console.log(fpos);
+        console.log(lpos);
+
+        var substr1 = str.substr(1, 6);
+        console.log(substr1)
+
+        var replace = str.replace('this', 'that');
+        console.log(replace);
+
+        var low = str.toLowerCase();
+        var upp = str.toUpperCase();
+        console.log(low);
+        console.log(upp);
+
+        var trim = str.trim();
+        console.log(trim);
+
+        console.clear();
+    </script>
+
+    <script>
+        /*array:methods*/
+        var marks3 = [34, 45, 66, 78, 98];
+        console.log(marks3);
+        //or
+        const marks2 = new Array(34, 56, 78, 45);
+        console.log(marks2);
+
+        //back
+        marks2.push(345);
+        console.log(marks2);
+
+        marks2.pop();
+        console.log(marks2);
+
+        //front
+        marks2.unshift(123);
+        console.log(marks2);
+
+        marks2.shift();
+        console.log(marks2);
+
+        //joint
+        marks3 = marks3.concat(marks2);
+        console.log(marks3);
+
+        console.log(marks2.length);
+        console.log(marks2.sort());
+
+        /*object:method*/
+        let obj2 = {
+            name: 'vish',
+            isactive: true,
+            mar: [34, 56, 78]
+        }
+        console.log(obj2);
+        console.log(obj2.mar);
+        console.log(obj2.name);
+        console.log(obj2.isactive);
+
+        console.clear();
+    </script>
+
+    <script>
+        /*if else*/
+        let salary = 500;
+        if (salary > 1000) {
+            console.log("salary is greater than 1000");
+        } else {
+            console.log("salary is less than 1000");
+        }
+
+        /*elseif*/
+        if (salary > 1000) {
+            console.log("salary is >1000");
+        } else if (salary < 1000) {
+            console.log("salary is <1000");
+        } else {
+            console.log("salary=1000");
+        }
+
+        /*switch*/
+        let age = 40;
+        switch (age) {
+            case 18:
+                console.log("age is 18");
+                break;
+            case 12:
+                console.log("age is 12");
+                break;
+            case 15:
+                console.log("age is 15");
+                break;
+            case 40:
+                console.log("age is 40");
+                break;
+            default:
+                console.log("wrong enter");
+                break;
+        }
+
+        console.clear();
+    </script>
+
+    <script>
+        var arr = [1, 2, 3, 4, 5, 6, 7];
+        /*while*/
+        let j = 0;
+        while (j < arr.length) {
+            console.log(arr[j]);
+            j++;
+        }
+
+
+        /*for*/
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+
+        arr.forEach(element => {
+            console.log(element);
+        });
+
+        console.clear();
+    </script>
+
+    <script>
+        function fun1(name, thank) {
+            console.log(`my name is ${name}, wlome and ${thank}`);
+        }
+
+        name = 'akash';
+        fun1(name, 'thanks a lot');
+
+        function fun2(name2, thank2 = "thanks a lot") {
+            let msg = `Time flies when you re with the love of your life ${name2}. Cheers to another year together ${thank2}— and forever to go!`
+            return msg;
+        }
+
+        let Name = 'vishal';
+        let val = fun2(Name);
+        console.log(val);
+
+        const mygreet = function(name3) {
+            let msg2 = `Time flies when you re with the love of your life ${name3}. Cheers to another year together— and forever to go!`
+            return msg2;
+        }
+
+        let Name2 = 'tarun';
+        let val2 = mygreet(Name2);
+        console.log(val2);
+
+        imparr = ['akash', 'tarun', 'vishal', 'noida'];
+        imparr.forEach(function(element, index, Array) {
+            console.log(element, index, Array);
+        });
+
+        console.clear();
+    </script>
+
+</body>
+
+</html>
